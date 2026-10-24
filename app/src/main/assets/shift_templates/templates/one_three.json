@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "one_three",
+  "nameKey": "shift.template.one_three.name",
+  "descriptionKey": "shift.template.one_three.description",
+  "cycle": ["work", "rest", "rest", "rest"],
+  "dayTypes": {
+    "work": {
+      "nameKey": "shift.daytype.work.name",
+      "startTime": "08:00",
+      "endTime": "08:00"
+    },
+    "rest": {
+      "nameKey": "shift.daytype.rest.name",
+      "startTime": null,
+      "endTime": null
+    }
+  },
+  "translations": {
+    "en": {
+      "strings": {
+        "shift.template.one_three.name": "1/3 (24 hours)",
+        "shift.template.one_three.description": "One 24-hour shift from 08:00, then three days off",
+        "shift.daytype.work.name": "24-hour shift",
+        "shift.daytype.rest.name": "Day off"
+      }
+    },
+    "ru": {
+      "strings": {
+        "shift.template.one_three.name": "1/3 (сутки)",
+        "shift.template.one_three.description": "Одна суточная смена с 08:00, затем три выходных",
+        "shift.daytype.work.name": "Суточная смена",
+        "shift.daytype.rest.name": "Выходной"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "example_religious",
+  "nameKey": "pack.example_religious.name",
+  "descriptionKey": "pack.example_religious.description",
+  "category": "religious",
+  "version": "1.0.0",
+  "dataFile": "holidays.json",
+  "translationsDirectory": "translations",
+  "availableLocales": ["ru", "en"],
+  "source": {
+    "name": "Western Christian calendar computed by the Gregorian Easter algorithm; verify before redistribution",
+    "url": null
+  },
+  "license": {
+    "spdxId": null,
+    "name": "Unspecified — verify before redistribution",
+    "url": null
+  }
+}

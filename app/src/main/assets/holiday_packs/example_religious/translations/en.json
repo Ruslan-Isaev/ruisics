@@ -1,0 +1,23 @@
+{
+  "locale": "en",
+  "strings": {
+    "pack.example_religious.name": "Western Christian holidays",
+    "pack.example_religious.description": "Example pack of movable Christian observances computed from the Gregorian Easter",
+    "holiday.epiphany.name": "Epiphany",
+    "holiday.epiphany.description": "Christian feast of the visit of the Magi",
+    "holiday.easter.name": "Easter",
+    "holiday.easter.description": "Christian celebration of the Resurrection of Christ, computed by the Gregorian algorithm",
+    "holiday.ash_wednesday.name": "Ash Wednesday",
+    "holiday.ash_wednesday.description": "First day of Lent, 46 days before Easter",
+    "holiday.palm_sunday.name": "Palm Sunday",
+    "holiday.palm_sunday.description": "Sunday before Easter, beginning of Holy Week",
+    "holiday.good_friday.name": "Good Friday",
+    "holiday.good_friday.description": "Friday before Easter, commemoration of the Crucifixion",
+    "holiday.easter_monday.name": "Easter Monday",
+    "holiday.easter_monday.description": "Day after Easter Sunday",
+    "holiday.pentecost.name": "Pentecost",
+    "holiday.pentecost.description": "Christian feast celebrated 49 days after Easter",
+    "holiday.christmas.name": "Christmas",
+    "holiday.christmas.description": "Christian celebration of the Nativity of Jesus"
+  }
+}

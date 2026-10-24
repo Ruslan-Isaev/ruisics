@@ -1,0 +1,23 @@
+{
+  "locale": "ru",
+  "strings": {
+    "pack.russia.name": "Государственные праздники России",
+    "pack.russia.description": "Официальные даты государственных праздников России",
+    "holiday.new_year.name": "Новый год",
+    "holiday.new_year.description": "Начало нового календарного года",
+    "holiday.christmas_orthodox.name": "Рождество Христово",
+    "holiday.christmas_orthodox.description": "Рождество, отмечаемое Русской православной церковью 7 января",
+    "holiday.defender_of_fatherland.name": "День защитника Отечества",
+    "holiday.defender_of_fatherland.description": "День чествования защитников страны",
+    "holiday.intl_womens_day.name": "Международный женский день",
+    "holiday.intl_womens_day.description": "День чествования женщин и их достижений",
+    "holiday.spring_and_labour.name": "Праздник Весны и Труда",
+    "holiday.spring_and_labour.description": "Государственный праздник весны и труда",
+    "holiday.victory_day.name": "День Победы",
+    "holiday.victory_day.description": "Празднование победы в Великой Отечественной войне (1941–1945)",
+    "holiday.russia_day.name": "День России",
+    "holiday.russia_day.description": "Национальный праздник Российской Федерации",
+    "holiday.national_unity.name": "День народного единства",
+    "holiday.national_unity.description": "День народного единства в память о событиях 1612 года"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "locales": [
+    {
+      "code": "en",
+      "name": "English",
+      "nativeName": "English",
+      "direction": "ltr",
+      "fileName": "en.json"
+    },
+    {
+      "code": "ru",
+      "name": "Russian",
+      "nativeName": "Русский",
+      "direction": "ltr",
+      "fileName": "ru.json"
+    }
+  ]
+}

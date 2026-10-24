@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "holidays": [
+    {
+      "id": "new_year",
+      "nameKey": "holiday.new_year.name",
+      "descriptionKey": "holiday.new_year.description",
+      "dateRule": { "type": "fixed", "month": 1, "day": 1 },
+      "durationDays": 1,
+      "tags": ["public"],
+      "enabledByDefault": true
+    },
+    {
+      "id": "christmas_orthodox",
+      "nameKey": "holiday.christmas_orthodox.name",
+      "descriptionKey": "holiday.christmas_orthodox.description",
+      "dateRule": { "type": "fixed", "month": 1, "day": 7 },
+      "durationDays": 1,
+      "tags": ["public", "religious", "christian"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "defender_of_fatherland",
+      "nameKey": "holiday.defender_of_fatherland.name",
+      "descriptionKey": "holiday.defender_of_fatherland.description",
+      "dateRule": { "type": "fixed", "month": 2, "day": 23 },
+      "durationDays": 1,
+      "tags": ["public"],
+      "enabledByDefault": true
+    },
+    {
+      "id": "intl_womens_day",
+      "nameKey": "holiday.intl_womens_day.name",
+      "descriptionKey": "holiday.intl_womens_day.description",
+      "dateRule": { "type": "fixed", "month": 3, "day": 8 },
+      "durationDays": 1,
+      "tags": ["public"],
+      "enabledByDefault": true
+    },
+    {
+      "id": "spring_and_labour",
+      "nameKey": "holiday.spring_and_labour.name",
+      "descriptionKey": "holiday.spring_and_labour.description",
+      "dateRule": { "type": "fixed", "month": 5, "day": 1 },
+      "durationDays": 1,
+      "tags": ["public"],
+      "enabledByDefault": true
+    },
+    {
+      "id": "victory_day",
+      "nameKey": "holiday.victory_day.name",
+      "descriptionKey": "holiday.victory_day.description",
+      "dateRule": { "type": "fixed", "month": 5, "day": 9 },
+      "durationDays": 1,
+      "tags": ["public"],
+      "enabledByDefault": true
+    },
+    {
+      "id": "russia_day",
+      "nameKey": "holiday.russia_day.name",
+      "descriptionKey": "holiday.russia_day.description",
+      "dateRule": { "type": "fixed", "month": 6, "day": 12 },
+      "durationDays": 1,
+      "tags": ["public"],
+      "enabledByDefault": true
+    },
+    {
+      "id": "national_unity",
+      "nameKey": "holiday.national_unity.name",
+      "descriptionKey": "holiday.national_unity.description",
+      "dateRule": { "type": "fixed", "month": 11, "day": 4 },
+      "durationDays": 1,
+      "tags": ["public"],
+      "enabledByDefault": true
+    }
+  ]
+}

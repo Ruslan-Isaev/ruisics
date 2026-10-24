@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "day_night",
+  "nameKey": "shift.template.day_night.name",
+  "descriptionKey": "shift.template.day_night.description",
+  "cycle": ["day", "night", "recovery", "rest"],
+  "dayTypes": {
+    "day": {
+      "nameKey": "shift.daytype.day.name",
+      "startTime": "08:00",
+      "endTime": "20:00"
+    },
+    "night": {
+      "nameKey": "shift.daytype.night.name",
+      "startTime": "20:00",
+      "endTime": "08:00"
+    },
+    "recovery": {
+      "nameKey": "shift.daytype.recovery.name",
+      "startTime": null,
+      "endTime": null
+    },
+    "rest": {
+      "nameKey": "shift.daytype.rest.name",
+      "startTime": null,
+      "endTime": null
+    }
+  },
+  "translations": {
+    "en": {
+      "strings": {
+        "shift.template.day_night.name": "Day / night / recovery",
+        "shift.template.day_night.description": "Day shift 08:00–20:00, night shift 20:00–08:00, recovery day, day off",
+        "shift.daytype.day.name": "Day shift",
+        "shift.daytype.night.name": "Night shift",
+        "shift.daytype.recovery.name": "Recovery day",
+        "shift.daytype.rest.name": "Day off"
+      }
+    },
+    "ru": {
+      "strings": {
+        "shift.template.day_night.name": "День / ночь / отсыпной",
+        "shift.template.day_night.description": "Дневная смена 08:00–20:00, ночная 20:00–08:00, отсыпной, выходной",
+        "shift.daytype.day.name": "Дневная смена",
+        "shift.daytype.night.name": "Ночная смена",
+        "shift.daytype.recovery.name": "Отсыпной",
+        "shift.daytype.rest.name": "Выходной"
+      }
+    }
+  }
+}

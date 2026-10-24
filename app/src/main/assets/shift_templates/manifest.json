@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "templates": [
+    { "fileName": "two_two.json" },
+    { "fileName": "one_three.json" },
+    { "fileName": "three_three.json" },
+    { "fileName": "day_night.json" },
+    { "fileName": "five_two.json" }
+  ]
+}

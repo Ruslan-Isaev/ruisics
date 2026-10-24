@@ -1,0 +1,27 @@
+{
+  "locale": "ru",
+  "strings": {
+    "pack.world.name": "Международные праздники",
+    "pack.world.description": "Подборка дат, отмечаемых во многих странах мира",
+    "holiday.new_year.name": "Новый год",
+    "holiday.new_year.description": "Начало нового календарного года",
+    "holiday.valentines_day.name": "День святого Валентина",
+    "holiday.valentines_day.description": "Неофициальный праздник влюблённых",
+    "holiday.intl_womens_day.name": "Международный женский день",
+    "holiday.intl_womens_day.description": "Международный день солидарности женщин",
+    "holiday.earth_day.name": "День Земли",
+    "holiday.earth_day.description": "Международный день защиты окружающей среды",
+    "holiday.labour_day.name": "День труда",
+    "holiday.labour_day.description": "Международный день солидарности трудящихся",
+    "holiday.intl_childrens_day.name": "Международный день защиты детей",
+    "holiday.intl_childrens_day.description": "Международный день в поддержку прав и благополучия детей",
+    "holiday.intl_friendship_day.name": "Международный день дружбы",
+    "holiday.intl_friendship_day.description": "Международный день дружбы между народами",
+    "holiday.halloween.name": "Хэллоуин",
+    "holiday.halloween.description": "Неофициальный праздник в канун Дня всех святых",
+    "holiday.intl_mens_day.name": "Международный мужской день",
+    "holiday.intl_mens_day.description": "Международный день мужского здоровья и положительных примеров",
+    "holiday.christmas.name": "Рождество (25 декабря)",
+    "holiday.christmas.description": "Христианский праздник Рождества Христова, отмечаемый и светски"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "united_states",
+  "nameKey": "pack.united_states.name",
+  "descriptionKey": "pack.united_states.description",
+  "category": "country",
+  "version": "1.0.0",
+  "dataFile": "holidays.json",
+  "translationsDirectory": "translations",
+  "availableLocales": ["ru", "en"],
+  "source": {
+    "name": "Compiled from publicly known official dates; verify before redistribution",
+    "url": null
+  },
+  "license": {
+    "spdxId": null,
+    "name": "Unspecified — verify before redistribution",
+    "url": null
+  }
+}

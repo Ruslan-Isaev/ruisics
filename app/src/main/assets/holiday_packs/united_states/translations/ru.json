@@ -1,0 +1,29 @@
+{
+  "locale": "ru",
+  "strings": {
+    "pack.united_states.name": "Федеральные праздники США",
+    "pack.united_states.description": "Федеральные праздники Соединённых Штатов Америки",
+    "holiday.new_years_day.name": "Новый год",
+    "holiday.new_years_day.description": "Начало нового календарного года",
+    "holiday.mlk_day.name": "День Мартина Лютера Кинга",
+    "holiday.mlk_day.description": "Третий понедельник января, день памяти Мартина Лютера Кинга",
+    "holiday.presidents_day.name": "День президентов",
+    "holiday.presidents_day.description": "Третий понедельник февраля, день чествования президентов США",
+    "holiday.memorial_day.name": "День памяти",
+    "holiday.memorial_day.description": "Последний понедельник мая, день памяти погибших военнослужащих",
+    "holiday.juneteenth.name": "Джунтинт",
+    "holiday.juneteenth.description": "День отмены рабства в Соединённых Штатах",
+    "holiday.independence_day.name": "День независимости",
+    "holiday.independence_day.description": "4 июля, день принятия Декларации независимости",
+    "holiday.labor_day.name": "День труда",
+    "holiday.labor_day.description": "Первый понедельник сентября, день чествования рабочего движения",
+    "holiday.columbus_day.name": "День Колумба",
+    "holiday.columbus_day.description": "Второй понедельник октября",
+    "holiday.veterans_day.name": "День ветеранов",
+    "holiday.veterans_day.description": "11 ноября, день чествования военных ветеранов",
+    "holiday.thanksgiving.name": "День благодарения",
+    "holiday.thanksgiving.description": "Четвёртый четверг ноября",
+    "holiday.christmas.name": "Рождество",
+    "holiday.christmas.description": "25 декабря, праздник Рождества Христова"
+  }
+}

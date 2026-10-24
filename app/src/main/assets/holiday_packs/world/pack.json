@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "world",
+  "nameKey": "pack.world.name",
+  "descriptionKey": "pack.world.description",
+  "category": "world",
+  "version": "1.0.0",
+  "dataFile": "holidays.json",
+  "translationsDirectory": "translations",
+  "availableLocales": ["ru", "en"],
+  "source": {
+    "name": "Compiled from publicly known observance dates; verify before redistribution",
+    "url": null
+  },
+  "license": {
+    "spdxId": null,
+    "name": "Unspecified — verify before redistribution",
+    "url": null
+  }
+}

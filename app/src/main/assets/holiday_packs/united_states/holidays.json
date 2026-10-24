@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "holidays": [
+    {
+      "id": "new_years_day",
+      "nameKey": "holiday.new_years_day.name",
+      "descriptionKey": "holiday.new_years_day.description",
+      "dateRule": { "type": "fixed", "month": 1, "day": 1 },
+      "durationDays": 1,
+      "tags": ["public", "federal"],
+      "enabledByDefault": true
+    },
+    {
+      "id": "mlk_day",
+      "nameKey": "holiday.mlk_day.name",
+      "descriptionKey": "holiday.mlk_day.description",
+      "dateRule": { "type": "nth_weekday", "month": 1, "weekday": 1, "n": 3 },
+      "durationDays": 1,
+      "tags": ["public", "federal"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "presidents_day",
+      "nameKey": "holiday.presidents_day.name",
+      "descriptionKey": "holiday.presidents_day.description",
+      "dateRule": { "type": "nth_weekday", "month": 2, "weekday": 1, "n": 3 },
+      "durationDays": 1,
+      "tags": ["public", "federal"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "memorial_day",
+      "nameKey": "holiday.memorial_day.name",
+      "descriptionKey": "holiday.memorial_day.description",
+      "dateRule": { "type": "nth_weekday", "month": 5, "weekday": 1, "n": -1 },
+      "durationDays": 1,
+      "tags": ["public", "federal"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "juneteenth",
+      "nameKey": "holiday.juneteenth.name",
+      "descriptionKey": "holiday.juneteenth.description",
+      "dateRule": { "type": "fixed", "month": 6, "day": 19 },
+      "durationDays": 1,
+      "tags": ["public", "federal"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "independence_day",
+      "nameKey": "holiday.independence_day.name",
+      "descriptionKey": "holiday.independence_day.description",
+      "dateRule": { "type": "fixed", "month": 7, "day": 4 },
+      "durationDays": 1,
+      "tags": ["public", "federal"],
+      "enabledByDefault": true
+    },
+    {
+      "id": "labor_day",
+      "nameKey": "holiday.labor_day.name",
+      "descriptionKey": "holiday.labor_day.description",
+      "dateRule": { "type": "nth_weekday", "month": 9, "weekday": 1, "n": 1 },
+      "durationDays": 1,
+      "tags": ["public", "federal"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "columbus_day",
+      "nameKey": "holiday.columbus_day.name",
+      "descriptionKey": "holiday.columbus_day.description",
+      "dateRule": { "type": "nth_weekday", "month": 10, "weekday": 1, "n": 2 },
+      "durationDays": 1,
+      "tags": ["public", "federal"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "veterans_day",
+      "nameKey": "holiday.veterans_day.name",
+      "descriptionKey": "holiday.veterans_day.description",
+      "dateRule": { "type": "fixed", "month": 11, "day": 11 },
+      "durationDays": 1,
+      "tags": ["public", "federal"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "thanksgiving",
+      "nameKey": "holiday.thanksgiving.name",
+      "descriptionKey": "holiday.thanksgiving.description",
+      "dateRule": { "type": "nth_weekday", "month": 11, "weekday": 4, "n": 4 },
+      "durationDays": 1,
+      "tags": ["public", "federal"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "christmas",
+      "nameKey": "holiday.christmas.name",
+      "descriptionKey": "holiday.christmas.description",
+      "dateRule": { "type": "fixed", "month": 12, "day": 25 },
+      "durationDays": 1,
+      "tags": ["public", "federal", "religious"],
+      "enabledByDefault": false
+    }
+  ]
+}

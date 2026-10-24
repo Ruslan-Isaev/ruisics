@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "two_two",
+  "nameKey": "shift.template.two_two.name",
+  "descriptionKey": "shift.template.two_two.description",
+  "cycle": ["work", "work", "rest", "rest"],
+  "dayTypes": {
+    "work": {
+      "nameKey": "shift.daytype.work.name",
+      "startTime": "08:00",
+      "endTime": "20:00"
+    },
+    "rest": {
+      "nameKey": "shift.daytype.rest.name",
+      "startTime": null,
+      "endTime": null
+    }
+  },
+  "translations": {
+    "en": {
+      "strings": {
+        "shift.template.two_two.name": "2/2",
+        "shift.template.two_two.description": "Two day shifts, then two days off, 08:00–20:00",
+        "shift.daytype.work.name": "Work day",
+        "shift.daytype.rest.name": "Day off"
+      }
+    },
+    "ru": {
+      "strings": {
+        "shift.template.two_two.name": "2/2",
+        "shift.template.two_two.description": "Две дневные смены, затем два выходных, 08:00–20:00",
+        "shift.daytype.work.name": "Рабочий день",
+        "shift.daytype.rest.name": "Выходной"
+      }
+    }
+  }
+}

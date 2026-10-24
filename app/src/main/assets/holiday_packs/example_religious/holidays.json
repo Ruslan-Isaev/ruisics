@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "holidays": [
+    {
+      "id": "epiphany",
+      "nameKey": "holiday.epiphany.name",
+      "descriptionKey": "holiday.epiphany.description",
+      "dateRule": { "type": "fixed", "month": 1, "day": 6 },
+      "durationDays": 1,
+      "tags": ["religious", "christian"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "easter",
+      "nameKey": "holiday.easter.name",
+      "descriptionKey": "holiday.easter.description",
+      "dateRule": { "type": "calculated", "calendar": "gregorian_easter" },
+      "durationDays": 1,
+      "tags": ["religious", "christian"],
+      "enabledByDefault": true
+    },
+    {
+      "id": "ash_wednesday",
+      "nameKey": "holiday.ash_wednesday.name",
+      "descriptionKey": "holiday.ash_wednesday.description",
+      "dateRule": { "type": "offset", "relativeTo": "easter", "offsetDays": -46 },
+      "durationDays": 1,
+      "tags": ["religious", "christian"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "palm_sunday",
+      "nameKey": "holiday.palm_sunday.name",
+      "descriptionKey": "holiday.palm_sunday.description",
+      "dateRule": { "type": "offset", "relativeTo": "easter", "offsetDays": -7 },
+      "durationDays": 1,
+      "tags": ["religious", "christian"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "good_friday",
+      "nameKey": "holiday.good_friday.name",
+      "descriptionKey": "holiday.good_friday.description",
+      "dateRule": { "type": "offset", "relativeTo": "easter", "offsetDays": -2 },
+      "durationDays": 1,
+      "tags": ["religious", "christian"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "easter_monday",
+      "nameKey": "holiday.easter_monday.name",
+      "descriptionKey": "holiday.easter_monday.description",
+      "dateRule": { "type": "offset", "relativeTo": "easter", "offsetDays": 1 },
+      "durationDays": 1,
+      "tags": ["religious", "christian"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "pentecost",
+      "nameKey": "holiday.pentecost.name",
+      "descriptionKey": "holiday.pentecost.description",
+      "dateRule": { "type": "offset", "relativeTo": "easter", "offsetDays": 49 },
+      "durationDays": 1,
+      "tags": ["religious", "christian"],
+      "enabledByDefault": false
+    },
+    {
+      "id": "christmas",
+      "nameKey": "holiday.christmas.name",
+      "descriptionKey": "holiday.christmas.description",
+      "dateRule": { "type": "fixed", "month": 12, "day": 25 },
+      "durationDays": 1,
+      "tags": ["religious", "christian"],
+      "enabledByDefault": false
+    }
+  ]
+}

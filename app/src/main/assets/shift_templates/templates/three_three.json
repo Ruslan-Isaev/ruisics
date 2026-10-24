@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "three_three",
+  "nameKey": "shift.template.three_three.name",
+  "descriptionKey": "shift.template.three_three.description",
+  "cycle": ["work", "work", "work", "rest", "rest", "rest"],
+  "dayTypes": {
+    "work": {
+      "nameKey": "shift.daytype.work.name",
+      "startTime": "08:00",
+      "endTime": "20:00"
+    },
+    "rest": {
+      "nameKey": "shift.daytype.rest.name",
+      "startTime": null,
+      "endTime": null
+    }
+  },
+  "translations": {
+    "en": {
+      "strings": {
+        "shift.template.three_three.name": "3/3",
+        "shift.template.three_three.description": "Three day shifts, then three days off, 08:00–20:00",
+        "shift.daytype.work.name": "Work day",
+        "shift.daytype.rest.name": "Day off"
+      }
+    },
+    "ru": {
+      "strings": {
+        "shift.template.three_three.name": "3/3",
+        "shift.template.three_three.description": "Три дневные смены, затем три выходных, 08:00–20:00",
+        "shift.daytype.work.name": "Рабочий день",
+        "shift.daytype.rest.name": "Выходной"
+      }
+    }
+  }
+}

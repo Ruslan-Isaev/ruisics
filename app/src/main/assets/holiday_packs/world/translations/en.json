@@ -1,0 +1,27 @@
+{
+  "locale": "en",
+  "strings": {
+    "pack.world.name": "International holidays",
+    "pack.world.description": "A collection of internationally observed dates",
+    "holiday.new_year.name": "New Year's Day",
+    "holiday.new_year.description": "The beginning of a new calendar year",
+    "holiday.valentines_day.name": "Valentine's Day",
+    "holiday.valentines_day.description": "Unofficial celebration of love and affection",
+    "holiday.intl_womens_day.name": "International Women's Day",
+    "holiday.intl_womens_day.description": "International observance of women's rights and achievements",
+    "holiday.earth_day.name": "Earth Day",
+    "holiday.earth_day.description": "International observance of environmental protection",
+    "holiday.labour_day.name": "International Workers' Day",
+    "holiday.labour_day.description": "International day of labour and workers",
+    "holiday.intl_childrens_day.name": "International Children's Day",
+    "holiday.intl_childrens_day.description": "International observance for children's rights and well-being",
+    "holiday.intl_friendship_day.name": "International Day of Friendship",
+    "holiday.intl_friendship_day.description": "International observance of friendship between peoples",
+    "holiday.halloween.name": "Halloween",
+    "holiday.halloween.description": "Unofficial celebration on the eve of All Hallows' Day",
+    "holiday.intl_mens_day.name": "International Men's Day",
+    "holiday.intl_mens_day.description": "International observance of men's health and positive role models",
+    "holiday.christmas.name": "Christmas (December 25)",
+    "holiday.christmas.description": "Christian celebration of the Nativity of Jesus, also observed secularly"
+  }
+}

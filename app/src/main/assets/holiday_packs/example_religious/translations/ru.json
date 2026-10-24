@@ -1,0 +1,23 @@
+{
+  "locale": "ru",
+  "strings": {
+    "pack.example_religious.name": "Западные христианские праздники",
+    "pack.example_religious.description": "Пример набора переходящих христианских праздников, вычисляемых от Пасхи по григорианскому алгоритму",
+    "holiday.epiphany.name": "Богоявление",
+    "holiday.epiphany.description": "Христианский праздник поклонения волхвов",
+    "holiday.easter.name": "Пасха",
+    "holiday.easter.description": "Христианский праздник Воскресения Христова, вычисляемый по григорианскому алгоритму",
+    "holiday.ash_wednesday.name": "Пепельная среда",
+    "holiday.ash_wednesday.description": "Первый день Великого поста, за 46 дней до Пасхи",
+    "holiday.palm_sunday.name": "Вербное воскресенье",
+    "holiday.palm_sunday.description": "Воскресенье перед Пасхой, начало Страстной недели",
+    "holiday.good_friday.name": "Великая пятница",
+    "holiday.good_friday.description": "Пятница перед Пасхой, день памяти Распятия Христова",
+    "holiday.easter_monday.name": "Пасхальный понедельник",
+    "holiday.easter_monday.description": "Понедельник после Пасхального воскресенья",
+    "holiday.pentecost.name": "Пятидесятница",
+    "holiday.pentecost.description": "Христианский праздник, отмечаемый на 49-й день после Пасхи",
+    "holiday.christmas.name": "Рождество",
+    "holiday.christmas.description": "Христианский праздник Рождества Христова"
+  }
+}

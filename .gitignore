@@ -1,0 +1,22 @@
+# Gradle
+.gradle/
+build/
+.kotlin/
+
+# Локальные настройки и секреты (не публикуются)
+local.properties
+keystore.properties
+keystore/
+*.jks
+*.keystore
+
+# Артефакты сборки
+*.apk
+*.aab
+*.idsig
+output-metadata.json
+
+# IDE
+.idea/
+*.iml
+.DS_Store

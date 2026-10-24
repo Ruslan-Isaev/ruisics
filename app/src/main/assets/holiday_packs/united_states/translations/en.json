@@ -1,0 +1,29 @@
+{
+  "locale": "en",
+  "strings": {
+    "pack.united_states.name": "United States federal holidays",
+    "pack.united_states.description": "Federal holidays of the United States",
+    "holiday.new_years_day.name": "New Year's Day",
+    "holiday.new_years_day.description": "The beginning of a new calendar year",
+    "holiday.mlk_day.name": "Martin Luther King Jr. Day",
+    "holiday.mlk_day.description": "Third Monday of January, honouring Martin Luther King Jr.",
+    "holiday.presidents_day.name": "Presidents' Day",
+    "holiday.presidents_day.description": "Third Monday of February, honouring US presidents",
+    "holiday.memorial_day.name": "Memorial Day",
+    "holiday.memorial_day.description": "Last Monday of May, honouring fallen service members",
+    "holiday.juneteenth.name": "Juneteenth",
+    "holiday.juneteenth.description": "Commemoration of the end of slavery in the United States",
+    "holiday.independence_day.name": "Independence Day",
+    "holiday.independence_day.description": "Fourth of July, adoption of the Declaration of Independence",
+    "holiday.labor_day.name": "Labor Day",
+    "holiday.labor_day.description": "First Monday of September, honouring the labour movement",
+    "holiday.columbus_day.name": "Columbus Day",
+    "holiday.columbus_day.description": "Second Monday of October",
+    "holiday.veterans_day.name": "Veterans Day",
+    "holiday.veterans_day.description": "November 11, honouring military veterans",
+    "holiday.thanksgiving.name": "Thanksgiving Day",
+    "holiday.thanksgiving.description": "Fourth Thursday of November",
+    "holiday.christmas.name": "Christmas Day",
+    "holiday.christmas.description": "December 25, celebration of the Nativity of Jesus"
+  }
+}

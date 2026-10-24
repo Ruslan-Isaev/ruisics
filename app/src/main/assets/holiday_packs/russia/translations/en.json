@@ -1,0 +1,23 @@
+{
+  "locale": "en",
+  "strings": {
+    "pack.russia.name": "Russian public holidays",
+    "pack.russia.description": "Official public holiday dates of Russia",
+    "holiday.new_year.name": "New Year's Day",
+    "holiday.new_year.description": "The beginning of a new calendar year",
+    "holiday.christmas_orthodox.name": "Orthodox Christmas",
+    "holiday.christmas_orthodox.description": "Christmas celebrated on January 7 by the Russian Orthodox Church",
+    "holiday.defender_of_fatherland.name": "Defender of the Fatherland Day",
+    "holiday.defender_of_fatherland.description": "Day honouring the armed forces and defenders of the country",
+    "holiday.intl_womens_day.name": "International Women's Day",
+    "holiday.intl_womens_day.description": "Day celebrating women and their achievements",
+    "holiday.spring_and_labour.name": "Spring and Labour Day",
+    "holiday.spring_and_labour.description": "Public holiday of spring and labour",
+    "holiday.victory_day.name": "Victory Day",
+    "holiday.victory_day.description": "Celebration of victory in the Great Patriotic War (1941–1945)",
+    "holiday.russia_day.name": "Russia Day",
+    "holiday.russia_day.description": "National day of the Russian Federation",
+    "holiday.national_unity.name": "National Unity Day",
+    "holiday.national_unity.description": "Day of national unity commemorating the events of 1612"
+  }
+}

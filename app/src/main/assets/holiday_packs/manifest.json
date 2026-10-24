@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "packs": [
+    { "id": "world", "directory": "world" },
+    { "id": "russia", "directory": "russia" },
+    { "id": "united_states", "directory": "united_states" },
+    { "id": "example_religious", "directory": "example_religious" }
+  ]
+}
