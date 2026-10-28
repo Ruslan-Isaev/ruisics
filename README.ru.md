@@ -101,12 +101,16 @@ Android-приложение для импорта, экспорта и упра
 
 ## Скриншоты
 
-![Screenshot](docs/screenshots/1.jpg)
-![Screenshot](docs/screenshots/2.jpg)
-![Screenshot](docs/screenshots/3.jpg)
-![Screenshot](docs/screenshots/4.jpg)
-![Screenshot](docs/screenshots/5.jpg)
-![Screenshot](docs/screenshots/6.jpg)
+
+<p align="center">
+  <img src="docs/screenshots/1.jpg" width="250" alt="Screenshot 1">
+  <img src="docs/screenshots/2.jpg" width="250" alt="Screenshot 2">
+  <img src="docs/screenshots/3.jpg" width="250" alt="Screenshot 3">
+</p><p align="center">
+  <img src="docs/screenshots/4.jpg" width="250" alt="Screenshot 4">
+  <img src="docs/screenshots/5.jpg" width="250" alt="Screenshot 5">
+  <img src="docs/screenshots/6.jpg" width="250" alt="Screenshot 6">
+</p>
 
 ## Сборка
 
