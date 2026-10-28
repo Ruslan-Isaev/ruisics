@@ -100,20 +100,12 @@ Written in Kotlin with Jetpack Compose. Licensed under the
 
 ## Screenshots
 
-Screenshots live in `docs/screenshots/`. Replace the placeholders below with
-real captures (about 360 px wide).
-
-| Home | ICS import/export | Event management |
-|:---:|:---:|:---:|
-| ![Home](docs/screenshots/home.png) | ![ICS](docs/screenshots/ics.png) | ![Events](docs/screenshots/events.png) |
-
-| Holiday packs | Pack details | Shift scheduler |
-|:---:|:---:|:---:|
-| ![Holidays](docs/screenshots/holidays.png) | ![Pack details](docs/screenshots/holiday_details.png) | ![Shifts](docs/screenshots/shifts.png) |
-
-| ICS generator | Settings | About |
-|:---:|:---:|:---:|
-| ![Generator](docs/screenshots/generator.png) | ![Settings](docs/screenshots/settings.png) | ![About](docs/screenshots/about.png) |
+![Screenshot](docs/screenshots/1.jpg)
+![Screenshot](docs/screenshots/2.jpg)
+![Screenshot](docs/screenshots/3.jpg)
+![Screenshot](docs/screenshots/4.jpg)
+![Screenshot](docs/screenshots/5.jpg)
+![Screenshot](docs/screenshots/6.jpg)
 
 ## Build
 

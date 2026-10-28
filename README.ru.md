@@ -101,20 +101,12 @@ Android-приложение для импорта, экспорта и упра
 
 ## Скриншоты
 
-Скриншоты хранятся в `docs/screenshots/`. Замените заглушки ниже реальными
-снимками экрана (ширина около 360 px).
-
-| Главный экран | Импорт/экспорт ICS | Управление событиями |
-|:---:|:---:|:---:|
-| ![Главный экран](docs/screenshots/home.png) | ![ICS](docs/screenshots/ics.png) | ![События](docs/screenshots/events.png) |
-
-| Наборы праздников | Детали набора | Планировщик смен |
-|:---:|:---:|:---:|
-| ![Праздники](docs/screenshots/holidays.png) | ![Детали набора](docs/screenshots/holiday_details.png) | ![Смены](docs/screenshots/shifts.png) |
-
-| Генератор ICS | Настройки | О приложении |
-|:---:|:---:|:---:|
-| ![Генератор](docs/screenshots/generator.png) | ![Настройки](docs/screenshots/settings.png) | ![О приложении](docs/screenshots/about.png) |
+![Screenshot](docs/screenshots/1.jpg)
+![Screenshot](docs/screenshots/2.jpg)
+![Screenshot](docs/screenshots/3.jpg)
+![Screenshot](docs/screenshots/4.jpg)
+![Screenshot](docs/screenshots/5.jpg)
+![Screenshot](docs/screenshots/6.jpg)
 
 ## Сборка
 
