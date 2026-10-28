@@ -1,47 +1,46 @@
-# Сторонние компоненты и данные
+# Third-Party Components and Data
 
-## Библиотеки (входят в APK)
+## Libraries (included in the APK)
 
-| Компонент | Версия | Лицензия |
+| Component | Version | License |
 |---|---|---|
 | Kotlin stdlib (org.jetbrains.kotlin) | 2.0.21 | Apache License 2.0 |
 | androidx.core:core-ktx | 1.15.0 | Apache License 2.0 |
 | androidx.activity:activity-compose | 1.9.3 | Apache License 2.0 |
 | androidx.compose (ui, graphics, material3; BOM) | 2024.12.01 | Apache License 2.0 |
 
-Тексты лицензий Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-(также приложены в зависимостях в `META-INF/` пакетов AndroidX).
+The Apache 2.0 license texts: https://www.apache.org/licenses/LICENSE-2.0
+(also included with the dependencies in the `META-INF/` directories of the AndroidX packages).
 
-## Библиотеки только для тестов (не входят в APK)
+## Test-only libraries (not included in the APK)
 
-| Компонент | Версия | Лицензия |
+| Component | Version | License |
 |---|---|---|
 | JUnit | 4.13.2 | Eclipse Public License 1.0 |
 
-## Инструменты сборки (не входят в APK)
+## Build tools (not included in the APK)
 
-| Компонент | Версия | Лицензия |
+| Component | Version | License |
 |---|---|---|
 | Gradle | 8.9 | Apache License 2.0 |
 | Android Gradle Plugin | 8.7.3 | Apache License 2.0 |
 
-## Наборы праздников
+## Holiday packs
 
-Все наборы собраны вручную из общеизвестных официальных дат; вычисляемые
-даты (Пасха) считаются алгоритмом Миуса/Джонса/Батчера. **Источники и
-лицензии данных не проверены и требуют уточнения перед
-перераспространением** — в метаданных каждого набора (`pack.json`) это
-отмечено явно (`source`/`license` без указания конкретных лицензий).
+All packs were compiled manually from well-known official dates; computed
+dates (Easter) are calculated using the Meeus/Jones/Butcher algorithm. **The sources and
+licenses of the data have not been verified and must be clarified before
+redistribution** — this is explicitly noted in the metadata of each pack (`pack.json`) (`source`/`license` fields without specific licenses given).
 
-| Набор | Содержимое |
+| Pack | Contents |
 |---|---|
-| `world` | Международные памятные даты (фиксированные) |
-| `russia` | Государственные праздники России (фиксированные) |
-| `united_states` | Федеральные праздники США (включая правила N-го дня недели) |
-| `example_religious` | Западные христианские праздники (Пасха и смещения от неё) |
+| `world` | International observances (fixed dates) |
+| `russia` | Russian public holidays (fixed dates) |
+| `united_states` | U.S. federal holidays (including nth-weekday-of-month rules) |
+| `example_religious` | Western Christian holidays (Easter and offsets from it) |
 
-## Прочее
+## Other
 
-- Приложение не содержит аналитики, рекламы, телеметрии и сетевых
-  сервисов; единственная внешняя ссылка — страница поддержки разработчика
-  https://ruiscode.ru/donate.html (открывается во внешнем браузере).
+- The app contains no analytics, advertising, telemetry, or network
+  services; the only external link is the developer's support page
+  https://ruiscode.ru/donate.html (opens in an external browser).
