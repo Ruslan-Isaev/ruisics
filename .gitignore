@@ -23,3 +23,6 @@ output-metadata.json
 .idea/
 *.iml
 .DS_Store
+
+# AI slope
+promt.txt
