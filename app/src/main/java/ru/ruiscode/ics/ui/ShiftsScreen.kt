@@ -246,6 +246,9 @@ fun ShiftsScreen(env: CalendarEnv, onBack: () -> Unit) {
     ScreenScaffold(title = s.get("menu.shifts"), onBack = onBack) {
         val occurrences = preview
         val template = effectiveTemplate()
+        // Резолвер с переводами шаблона: имена типов дней (dayType.nameKey)
+        // есть только в translations шаблона, а не в глобальных локалях.
+        val resolver = template?.resolver(s) ?: s
 
         LazyColumn(modifier = Modifier.weight(1f)) {
             item {
@@ -340,7 +343,7 @@ fun ShiftsScreen(env: CalendarEnv, onBack: () -> Unit) {
                 item {
                     Spacer(Modifier.height(4.dp))
                     Text(
-                        s.format("shifts.daytype.times", "type" to s.get(dayType.nameKey)),
+                        s.format("shifts.daytype.times", "type" to resolver.get(dayType.nameKey)),
                         style = MaterialTheme.typography.titleSmall,
                     )
                     Spacer(Modifier.height(4.dp))
@@ -485,7 +488,7 @@ fun ShiftsScreen(env: CalendarEnv, onBack: () -> Unit) {
                             if (o.isWorking) {
                                 "${s.formatTime(o.start!!.toLocalTime())}–${s.formatTime(o.end!!.toLocalTime())}"
                             } else {
-                                s.get("shift.daytype.${o.dayTypeId}.name")
+                                resolver.get("shift.daytype.${o.dayTypeId}.name")
                             },
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,

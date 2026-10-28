@@ -84,4 +84,26 @@ class EventDeleterTest {
         assertEquals(0, result.deleted)
         assertTrue(result.failedIds.isEmpty())
     }
+
+    @Test
+    fun slowModePausesBetweenBatches() {
+        val deleter = EventDeleter(batchSize = 2, delayBetweenBatchesMillis = 25)
+        val start = System.nanoTime()
+        val result = deleter.delete((1L..5L).toList(), doDelete = { it.size })
+        val elapsedMs = (System.nanoTime() - start) / 1_000_000
+        assertEquals(5, result.deleted)
+        // 3 пакета → 2 паузы по 25 мс; запас на неточность измерения.
+        assertTrue("expected pauses between batches, elapsed ${elapsedMs}ms", elapsedMs >= 40)
+    }
+
+    @Test
+    fun noPauseAfterLastBatch() {
+        val deleter = EventDeleter(batchSize = 50, delayBetweenBatchesMillis = 25)
+        val start = System.nanoTime()
+        val result = deleter.delete((1L..3L).toList(), doDelete = { it.size })
+        val elapsedMs = (System.nanoTime() - start) / 1_000_000
+        assertEquals(3, result.deleted)
+        // Один пакет — пауза не нужна, удаление должно быть быстрым.
+        assertTrue("no pause expected for a single batch, elapsed ${elapsedMs}ms", elapsedMs < 20)
+    }
 }

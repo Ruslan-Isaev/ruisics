@@ -104,6 +104,8 @@
       "other": "{count} events could not be deleted"
     },
     "events.delete.retry.hint": "You can retry deleting the remaining events.",
+    "events.slow_delete.label": "Gradual deletion",
+    "events.slow_delete.hint": "Delete in batches with pauses between them — slower, but gentler on the calendar and sync.",
     "events.clear.title": "Clear calendar",
     "events.clear.description": "Deletes all events of the selected calendar. The calendar itself and events in other calendars are not affected.",
     "events.clear.warning": "The calendar «{calendar}» contains {count} events. All of them will be permanently deleted. This action is irreversible.",
@@ -177,6 +179,9 @@
     "shifts.daytype.start": "Start",
     "shifts.daytype.end": "End",
     "shifts.daytype.no_event": "No event (day off)",
+    "shift.daytype.work.name": "Work day",
+    "shift.daytype.rest.name": "Day off",
+    "shift.daytype.recovery.name": "Recovery day",
     "shifts.time.invalid": "Enter time as HH:MM",
     "shifts.length.invalid": "Schedule length must be from {min} to {max} days",
     "shifts.title.empty": "Enter an event title",

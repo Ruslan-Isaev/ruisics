@@ -7,8 +7,15 @@ package ru.ruiscode.ics.calendar
  * не получен результат по каждому пакету. Частично неудачное удаление
  * возвращает список необработанных id — их можно передать повторной
  * попыткой.
+ *
+ * [delayBetweenBatchesMillis] > 0 включает постепенное (медленное)
+ * удаление: между пакетами выдерживается пауза, чтобы снизить нагрузку
+ * на провайдер календаря и фоновую синхронизацию.
  */
-class EventDeleter(private val batchSize: Int = DEFAULT_BATCH_SIZE) {
+class EventDeleter(
+    private val batchSize: Int = DEFAULT_BATCH_SIZE,
+    private val delayBetweenBatchesMillis: Long = 0L,
+) {
 
     data class Result(
         val deleted: Int,
@@ -43,6 +50,10 @@ class EventDeleter(private val batchSize: Int = DEFAULT_BATCH_SIZE) {
             }
             done += batch.size
             onProgress(done, ids.size)
+            // Пауза между пакетами в режиме постепенного удаления.
+            if (delayBetweenBatchesMillis > 0 && done < ids.size) {
+                Thread.sleep(delayBetweenBatchesMillis)
+            }
         }
         return Result(deleted, failed)
     }

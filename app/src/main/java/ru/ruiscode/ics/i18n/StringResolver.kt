@@ -52,6 +52,10 @@ class StringResolver(
     fun format(key: String, params: Map<String, Any?>): String =
         substitute(get(key), params)
 
+    /** Подстановка именованных параметров парами: `format("a.b", "count" to 3)`. */
+    fun format(key: String, vararg named: Pair<String, Any?>): String =
+        format(key, named.toMap())
+
     /** Подстановка позиционных параметров: `format("a.b", x, y)` для `"{0}"`, `"{1}"`. */
     fun format(key: String, vararg positional: Any?): String =
         format(key, positional.mapIndexed { i, v -> i.toString() to v }.toMap())

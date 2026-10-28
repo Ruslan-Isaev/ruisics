@@ -106,6 +106,8 @@
       "many": "{count} событий не удалось удалить"
     },
     "events.delete.retry.hint": "Можно повторить удаление оставшихся событий.",
+    "events.slow_delete.label": "Постепенное удаление",
+    "events.slow_delete.hint": "Удалять пакетами с паузой между ними — медленнее, но меньше нагрузка на календарь и синхронизацию.",
     "events.clear.title": "Очистить календарь",
     "events.clear.description": "Удаляет все события выбранного календаря. Сам календарь и события в других календарях не затрагиваются.",
     "events.clear.warning": "В календаре «{calendar}» находится событий: {count}. Все они будут удалены безвозвратно. Это действие необратимо.",
@@ -183,6 +185,9 @@
     "shifts.daytype.start": "Начало",
     "shifts.daytype.end": "Конец",
     "shifts.daytype.no_event": "Без события (выходной)",
+    "shift.daytype.work.name": "Рабочий день",
+    "shift.daytype.rest.name": "Выходной",
+    "shift.daytype.recovery.name": "Отсыпной",
     "shifts.time.invalid": "Введите время в формате ЧЧ:ММ",
     "shifts.length.invalid": "Длина расписания — от {min} до {max} дней",
     "shifts.title.empty": "Введите название события",

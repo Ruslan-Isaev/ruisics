@@ -12,6 +12,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Checkbox
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
@@ -24,6 +25,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
@@ -38,6 +40,9 @@ import java.time.ZoneId
 import java.time.format.DateTimeParseException
 
 private enum class DeleteCriteria { KEYWORD, RANGE, ALL }
+
+/** Пауза между пакетами в режиме постепенного удаления. */
+private const val SLOW_BATCH_DELAY_MS = 250L
 
 /**
  * Управление событиями: пакетное удаление по ключевому слову и диапазону
@@ -62,6 +67,7 @@ fun EventsScreen(env: CalendarEnv, onBack: () -> Unit) {
     var failedIds by remember { mutableStateOf<List<Long>?>(null) }
     var clearDialog by remember { mutableStateOf(false) }
     var clearCount by remember { mutableStateOf<Int?>(null) }
+    var slowDelete by remember { mutableStateOf(false) }
     val status = remember { mutableStateListOf<String>() }
 
     fun addStatus(msg: String) {
@@ -74,7 +80,7 @@ fun EventsScreen(env: CalendarEnv, onBack: () -> Unit) {
             progress = null
             failedIds = null
             val result = withContext(Dispatchers.IO) {
-                val deleter = EventDeleter()
+                val deleter = EventDeleter(delayBetweenBatchesMillis = if (slowDelete) SLOW_BATCH_DELAY_MS else 0L)
                 deleter.delete(
                     ids = ids,
                     doDelete = { batch -> CalendarData.deleteEvents(context.contentResolver, batch) },
@@ -356,6 +362,11 @@ fun EventsScreen(env: CalendarEnv, onBack: () -> Unit) {
                             )
                         }
                         Spacer(Modifier.height(8.dp))
+                        SlowDeleteCheckbox(
+                            checked = slowDelete,
+                            onCheckedChange = { slowDelete = it },
+                        )
+                        Spacer(Modifier.height(8.dp))
                         Text(
                             s.get("events.confirm.irreversible"),
                             style = MaterialTheme.typography.bodySmall,
@@ -383,6 +394,11 @@ fun EventsScreen(env: CalendarEnv, onBack: () -> Unit) {
                     Column {
                         Text(s.format("events.clear.warning", "count" to count, "calendar" to calendarName))
                         Spacer(Modifier.height(8.dp))
+                        SlowDeleteCheckbox(
+                            checked = slowDelete,
+                            onCheckedChange = { slowDelete = it },
+                        )
+                        Spacer(Modifier.height(8.dp))
                         Text(
                             s.get("events.series.note"),
                             style = MaterialTheme.typography.bodySmall,
@@ -400,7 +416,7 @@ fun EventsScreen(env: CalendarEnv, onBack: () -> Unit) {
                             CalendarData.getAllEventIds(context.contentResolver, calendarId)
                         }
                         val result = withContext(Dispatchers.IO) {
-                            EventDeleter().delete(
+                            EventDeleter(delayBetweenBatchesMillis = if (slowDelete) SLOW_BATCH_DELAY_MS else 0L).delete(
                                 ids = ids,
                                 doDelete = { batch -> CalendarData.deleteEvents(context.contentResolver, batch) },
                                 onProgress = { done, total -> progress = done to total },
@@ -416,6 +432,26 @@ fun EventsScreen(env: CalendarEnv, onBack: () -> Unit) {
                     }
                 },
                 onDismiss = { clearDialog = false },
+            )
+        }
+    }
+}
+
+/** Галочка постепенного удаления для диалогов массового удаления и очистки. */
+@Composable
+private fun SlowDeleteCheckbox(checked: Boolean, onCheckedChange: (Boolean) -> Unit) {
+    val s = LocalStrings.current
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Checkbox(checked = checked, onCheckedChange = onCheckedChange)
+        Column {
+            Text(
+                s.get("events.slow_delete.label"),
+                style = MaterialTheme.typography.bodyMedium,
+            )
+            Text(
+                s.get("events.slow_delete.hint"),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
     }
