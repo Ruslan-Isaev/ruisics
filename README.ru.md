@@ -102,15 +102,18 @@ Android-приложение для импорта, экспорта и упра
 ## Скриншоты
 
 
-<p align="center">
-  <img src="docs/screenshots/1.jpg" width="250" alt="Screenshot 1">
-  <img src="docs/screenshots/2.jpg" width="250" alt="Screenshot 2">
-  <img src="docs/screenshots/3.jpg" width="250" alt="Screenshot 3">
-</p><p align="center">
-  <img src="docs/screenshots/4.jpg" width="250" alt="Screenshot 4">
-  <img src="docs/screenshots/5.jpg" width="250" alt="Screenshot 5">
-  <img src="docs/screenshots/6.jpg" width="250" alt="Screenshot 6">
-</p>
+<table>
+  <tr>
+    <td><img src="docs/screenshots/1.jpg" width="200" alt="Screenshot 1"></td>
+    <td><img src="docs/screenshots/2.jpg" width="200" alt="Screenshot 2"></td>
+    <td><img src="docs/screenshots/3.jpg" width="200" alt="Screenshot 3"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/4.jpg" width="200" alt="Screenshot 4"></td>
+    <td><img src="docs/screenshots/5.jpg" width="200" alt="Screenshot 5"></td>
+    <td><img src="docs/screenshots/6.jpg" width="200" alt="Screenshot 6"></td>
+  </tr>
+</table>
 
 ## Сборка
 
