@@ -24,7 +24,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import ru.ruiscode.ics.BuildConfig
 import ru.ruiscode.ics.core.ExternalLinks
 import ru.ruiscode.ics.core.OpenResult
 
@@ -104,7 +103,7 @@ fun HomeScreen(onOpen: (Screen) -> Unit) {
         Spacer(Modifier.height(8.dp))
         MenuCard(
             title = s.get("menu.about"),
-            subtitle = s.format("about.version", BuildConfig.VERSION_NAME),
+            subtitle = s.get("about.version"),
             icon = Icons.Filled.Info,
             onClick = { onOpen(Screen.About) },
         )

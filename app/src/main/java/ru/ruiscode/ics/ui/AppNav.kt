@@ -85,7 +85,7 @@ fun AppNav() {
         Screen.Home -> HomeScreen(onOpen = ::push)
         Screen.Ics -> IcsScreen(env, onBack = ::pop)
         Screen.Events -> EventsScreen(env, onBack = ::pop)
-        Screen.Holidays -> HolidaysScreen(env, onBack = ::pop, onOpenPack = { push(Screen.HolidayDetail(it)) })
+        Screen.Holidays -> HolidaysScreen(onBack = ::pop, onOpenPack = { push(Screen.HolidayDetail(it)) })
         is Screen.HolidayDetail -> HolidayDetailScreen(screen.packId, env, onBack = ::pop)
         Screen.Shifts -> ShiftsScreen(env, onBack = ::pop)
         Screen.Generator -> GeneratorScreen(env, onBack = ::pop)

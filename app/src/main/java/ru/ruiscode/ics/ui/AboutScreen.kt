@@ -25,7 +25,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import ru.ruiscode.ics.AppModules
-import ru.ruiscode.ics.BuildConfig
 import ru.ruiscode.ics.core.ExternalLinks
 import ru.ruiscode.ics.core.OpenResult
 
@@ -48,7 +47,7 @@ fun AboutScreen(onBack: () -> Unit) {
                 fontWeight = FontWeight.Bold,
             )
             Text(
-                s.format("about.version", BuildConfig.VERSION_NAME),
+                s.get("about.version"),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )

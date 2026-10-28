@@ -32,17 +32,6 @@ class AppSettingsTest {
     }
 
     @Test
-    fun persistsEnabledPacks() {
-        val store = InMemoryStore()
-        val settings = AppSettings(store)
-        assertEquals(emptySet<String>(), settings.enabledPackIds.value)
-        settings.setPackEnabled("world", true)
-        settings.setPackEnabled("russia", true)
-        settings.setPackEnabled("world", false)
-        assertEquals(setOf("russia"), AppSettings(store).enabledPackIds.value)
-    }
-
-    @Test
     fun persistsSelectedCalendar() {
         val store = InMemoryStore()
         val settings = AppSettings(store)

@@ -13,8 +13,6 @@ import kotlinx.coroutines.flow.StateFlow
 interface KeyValueStore {
     fun getString(key: String, def: String?): String?
     fun putString(key: String, value: String)
-    fun getStringSet(key: String): Set<String>
-    fun putStringSet(key: String, value: Set<String>)
     fun getLong(key: String, def: Long): Long
     fun putLong(key: String, value: Long)
 }
@@ -22,20 +20,15 @@ interface KeyValueStore {
 class SharedPrefsStore(private val prefs: SharedPreferences) : KeyValueStore {
     override fun getString(key: String, def: String?): String? = prefs.getString(key, def)
     override fun putString(key: String, value: String) = prefs.edit().putString(key, value).apply()
-    override fun getStringSet(key: String): Set<String> = prefs.getStringSet(key, emptySet()) ?: emptySet()
-    override fun putStringSet(key: String, value: Set<String>) = prefs.edit().putStringSet(key, value).apply()
     override fun getLong(key: String, def: Long): Long = prefs.getLong(key, def)
     override fun putLong(key: String, value: Long) = prefs.edit().putLong(key, value).apply()
 }
 
 class InMemoryStore : KeyValueStore {
     private val strings = mutableMapOf<String, String>()
-    private val sets = mutableMapOf<String, Set<String>>()
     private val longs = mutableMapOf<String, Long>()
     override fun getString(key: String, def: String?): String? = strings[key] ?: def
     override fun putString(key: String, value: String) { strings[key] = value }
-    override fun getStringSet(key: String): Set<String> = sets[key] ?: emptySet()
-    override fun putStringSet(key: String, value: Set<String>) { sets[key] = value }
     override fun getLong(key: String, def: Long): Long = longs[key] ?: def
     override fun putLong(key: String, value: Long) { longs[key] = value }
 }
@@ -55,9 +48,6 @@ class AppSettings(private val store: KeyValueStore) {
     private val _theme = MutableStateFlow(parseTheme(store.getString(KEY_THEME, null)))
     val theme: StateFlow<ThemeMode> = _theme
 
-    private val _enabledPackIds = MutableStateFlow(store.getStringSet(KEY_ENABLED_PACKS).toSet())
-    val enabledPackIds: StateFlow<Set<String>> = _enabledPackIds
-
     private val _selectedCalendarId = MutableStateFlow(store.getLong(KEY_CALENDAR_ID, -1L).takeIf { it >= 0 })
     val selectedCalendarId: StateFlow<Long?> = _selectedCalendarId
 
@@ -75,12 +65,6 @@ class AppSettings(private val store: KeyValueStore) {
     fun setTheme(mode: ThemeMode) {
         _theme.value = mode
         store.putString(KEY_THEME, mode.name.lowercase())
-    }
-
-    fun setPackEnabled(id: String, enabled: Boolean) {
-        val updated = if (enabled) _enabledPackIds.value + id else _enabledPackIds.value - id
-        _enabledPackIds.value = updated
-        store.putStringSet(KEY_ENABLED_PACKS, updated)
     }
 
     fun setSelectedCalendar(id: Long) {
@@ -107,7 +91,6 @@ class AppSettings(private val store: KeyValueStore) {
         const val PREF_NAME = "ruis_ics_settings"
         const val KEY_LANGUAGE = "language"
         const val KEY_THEME = "theme"
-        const val KEY_ENABLED_PACKS = "enabled_holiday_packs"
         const val KEY_CALENDAR_ID = "selected_calendar_id"
         const val KEY_CUSTOM_SHIFT_TEMPLATES = "custom_shift_templates"
 

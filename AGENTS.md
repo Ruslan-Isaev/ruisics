@@ -23,6 +23,16 @@ RUIS ICS — Android-приложение на Kotlin и Jetpack Compose для 
   формат и структуру соседних модулей.
 - Не включайте секреты подписи (`keystore.properties`, keystore) в изменения.
 
+## Версия приложения
+
+Версия, показываемая в интерфейсе, жёстко задана в строках локализации
+(`about.version`) — не выводите её через `BuildConfig`. При смене версии
+обновите все три места одновременно:
+
+1. `app/build.gradle.kts` — `versionCode` и `versionName` в `defaultConfig`;
+2. `app/src/main/assets/locales/ru.json` — ключ `about.version`;
+3. `app/src/main/assets/locales/en.json` — ключ `about.version`.
+
 ## Сборка
 
 Требуются JDK 17 и Android SDK с платформой 35. Используйте Gradle Wrapper:
