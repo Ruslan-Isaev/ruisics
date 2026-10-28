@@ -1,36 +1,29 @@
-# Внесение изменений в RUIS ICS
+# Contributing to RUIS ICS
 
-Спасибо за интерес к проекту! Несколько простых правил.
+Thanks for your interest in the project! A few simple rules.
 
-## Как предлагать изменения
+## How to propose changes
 
-1. Создайте issue с описанием проблемы или предложения.
-2. Работайте в отдельной ветке от `main`.
-3. Следуйте существующему стилю кода (Kotlin, официальный code style).
-4. Для новых функций добавьте юнит-тесты (см. `app/src/test/`).
-5. Убедитесь, что `./gradlew testDebugUnitTest assembleDebug` проходит.
-6. Опишите изменения в PR: что сделано, почему, как проверено.
+1. Create an issue describing the problem or suggestion.
+2. Work in a separate branch off `main`.
+3. Follow the existing code style (Kotlin, official code style).
+4. For new features, add unit tests (see `app/src/test/`).
+5. Make sure `./gradlew testDebugUnitTest assembleDebug` passes.
+6. Describe your changes in the PR: what was done, why, and how it was verified.
 
-## Требования к коду
+## Code requirements
 
-- Бизнес-логика не должна зависеть от Android-фреймворка — тогда она
-  тестируется на JVM (см. разделение пакетов в README).
-- Все строки интерфейса — через систему локализации: ключ в
-  `assets/locales/en.json` и `assets/locales/ru.json` (en — резервный).
-- Новые данные (языки, наборы праздников, шаблоны смен) — только через
-  JSON-файлы по схемам из README, без изменения Kotlin-кода.
-- Операции с календарём требуют явного подтверждения пользователя.
-- Не добавляйте зависимости без необходимости; для каждой — проверка
-  лицензии и совместимости с F-Droid (сборка только из исходников).
+- Business logic must not depend on the Android framework, so that it can be tested on the JVM (see the package separation in the README).
+- All UI strings must go through the localization system: add a key to `assets/locales/en.json` and `assets/locales/ru.json` (en is the fallback).
+- New data (languages, holiday packs, shift templates) must be added only via JSON files following the schemas in the README, without changing Kotlin code.
+- Calendar operations require explicit user confirmation.
+- Do not add dependencies unless necessary; for each one, check the license and compatibility with F-Droid (builds from source only).
 
-## Лицензии данных
+## Data licenses
 
-- Источники и лицензии наборов праздников указывайте честно.
-  Если лицензия данных не определена — явно отметьте это.
-- Не добавляйте в репозиторий секреты, ключи подписи, локальные
-  настройки IDE и приватные данные календарей.
+- State the sources and licenses of holiday packs honestly. If a data license is undetermined, explicitly mark it as such.
+- Do not commit secrets, signing keys, local IDE settings, or private calendar data to the repository.
 
-## Лицензия
+## License
 
-Проект распространяется под Apache License 2.0. Отправляя изменения,
-вы соглашаетесь с их распространением на этих условиях.
+The project is distributed under the Apache License 2.0. By submitting changes, you agree to their distribution under these terms.
